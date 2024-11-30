@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizqy Agung Saputra</title>
+  <style>
+    /* --- General Styling --- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #141e30, #243b55);
+    }
+    h1, h2, p {
+      margin: 0;
+      padding: 10px 0;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* --- Hero Section --- */
+    .hero {
+      height: 100vh;
+      background: url('background football.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .typing-effect {
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(20) infinite alternate;
+    }
+
+    /* --- About Section --- */
+    .about {
+      background: #243b55;
+    }
+    .timeline {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .timeline-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+    .timeline-item:hover {
+      transform: scale(1.05);
+    }
+
+    /* --- Hobbies Section --- */
+    .hobbies {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .hobby {
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .hobby img {
+      width: 100px;
+    }
+    .hobby:hover {
+      transform: translateY(-10px);
+    }
+
+    /* --- Football Section --- */
+    .football {
+      background: #f5f5f5;
+      color: black;
+    }
+    .teams {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .teams img {
+      width: 120px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-20px); }
+      60% { transform: translateY(-10px); }
+    }
+
+    /* --- Contact Section --- */
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #ff4747;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #ff7878;
+    }
+
+    /* --- Animations --- */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Halo, Saya <span class="typing-effect">Rizqy Agung Saputra</span></h1>
+    <p>Selamat datang di dunia saya yang penuh dengan musik dan sepak bola!</p>
+  </div>
+
+ 
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Tentang Saya</h2>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <h2>Ikuti Saya</h2>
+    <ul class="social-links">
+      <li><a href="https://www.instagram.com/rzzqyagng" target="_blank" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 30px;"></a></li>
+      <li><a href="https://www.facebook.com/rizqy.saputra.9638" target="_blank" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 30px;"></a></li>
+      <li><a href="https://x.com/RizqyAgung_9" target="_blank" title="X"><img src="X.jpg" alt="X" style="width: 30px;"></a></li>
+    </ul>
+  </footer>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>Taman Kanak-Kanak:</strong> TK Pusposari 4
+      </div>
+      <div class="timeline-item">
+        <strong>Sekolah Dasar:</strong> SD Negeri Ngrenak
+      </div>
+      <div class="timeline-item">
+        <strong>Sekolah Menengah Pertama:</strong> SMP Negeri 2 Godean
+      </div>
+      <div class="timeline-item">
+        <strong>Sekolah Menengah Kejuruan:</strong> SMK Negeri 1 Seyegan
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section class="hobbies">
+    <h2>Hobi Saya</h2>
+    <div class="hobbies">
+      <div class="hobby">
+        <img src="football.jpg" alt="Sepak Bola">
+        <p>Sepak Bola</p>
+      </div>
+      <div class="hobby">
+        <img src="music.jpg" alt="Mendengarkan Musik">
+        <p>Mendengarkan Musik</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Football Section -->
+  <section class="football">
+    <h2>Tim Favorit Saya</h2>
+    <div class="teams">
+      <div>
+        <img src="pss.jpg" alt="PSS Sleman">
+        <p>PSS Sleman</p>
+      </div>
+      <div>
+        <img src="liverpool.jpg" alt="Liverpool">
+        <p>Liverpool</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Football Section -->
+  <section class="football">
+    <h2>Music Favorit Saya</h2>
+    <div class="teams">
+      <div>
+        <img src="od.jpg" alt="Over Distortion">
+        <p>Over Distortion</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Kontak Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <script>
+    // Typing Effect Animation
+    const typingElement = document.querySelector('.typing-effect');
+    const words = ['Rizqy Agung Saputra', 'Penggemar Musik', 'Pencinta Sepak Bola'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typingElement.textContent = currentWord.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+      } else {
+        typingElement.textContent = currentWord.substring(0, charIndex++);
+        if (charIndex === currentWord.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, isDeleting ? 100 : 200);
+    }
+
+    type();
+  </script>
+</body>
+</html>
